@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single page webapp</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
+
+    <!-- External Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body class="h-100" id="home">
+
+    <header>
+        <nav class="navbar navbar-expand-md w-100">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" id="home-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="about-us-link" href="#about-us">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="gallery-link" href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="services-link" href="#services">Services</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="head-container d-block flex-column text-center mb-5">
+            <h1 class=" mt-5 mb-5">Travells & Trips</h1>
+        </div>
+
+        <div id="about-us" class="border-top d-block flex-column text-center align-items-center">
+            <h1 class="pb-3">UDAIPUR</h1>
+            <h6 class="pb-3">THE CITY OF LAKES AND PALACES</h6>
+            <div class="d-flex justify-content-center">
+                <p class="w-75">Often referred to as the 'Venice of the East', the city of lakes Udaipur is located around azure water lakes and is hemmed in
+                    by lush green hills of Aravallis. The famous Lake Palace, located in the middle of Lake Pichola is one of the most beautiful sights of
+                    Udaipur. It is also home to Jaisamand Lake, claimed to be the second largest man-made sweet water lake in Asia. The beautiful City Palace
+                    and Sajjangarh (Monsoon Palace) add to the architectural beauty and grandeur of the city. The city is also known for its profusion of zinc
+                    and marble. Solar observatory in Lake Fateh Sagar is the only observatory in India located on an island and has been made on the pattern of
+                    Big Bear Lake in Southern California. The ten-day Shilpgram Festival which starts from 21 Dec to 30 Dec pulls in a large number of people
+                    interested in arts and crafts.Udaipur was founded in 1553 by Maharana Udai Singh II as the new capital of Mewar Kingdom. It is located in
+                    the fertile, circular Girwa
+                    Valley to the southwest of Nagda, which was the first capital of Mewar.</p>
+            </div>
+        </div>
+
+        <div id="gallery" class="container">
+            <div class="d-flex flex-column justify-content-center text-center ">
+                <h1 class=" mt-5 mb-5 d-flex align-items-center justify-content-center ">Gallery</h1>
+
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1572980071199-3d874a56b987?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1635&q=80"
+                                height="700px" class="d-block w-100 object-fit-cover" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1633702738734-443da2c18f3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                class="d-block w-100 object-fit-cover" height="700px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1615836245337-f5b9b2303f10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+                                height="700px" class="d-block w-100 object-fit-cover" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="services" class="container d-flex justify-content-center g-4 row text-center mx-auto mb-5 mt-0">
+            <h1 class="mb-5 mt-5">Hotels & Services</h1>
+
+            <div class="card col-md-6 col-sm-12">
+                <img src="https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/explore/229.jpg" class="card-img-top mt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PRATAP MEMORIAL (MOTI MAGRI)</h5>
+                    <p class="card-text">An impressive bronze statue of Maharana Pratap on his favourite horse Chetak, stands atop the Moti Magri overlooking
+                        Fateh Sagar. Local people climb up the hill to pay homage to Rana Pratap and his faithful charger 'Chetak'.</p>
+                    <a href="#" class="text-black text-decoration-none fw-bold">Get Info ></a>
+                </div>
+            </div>
+            <div class="card col-md-6 col-sm-12">
+                <img src="https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/explore/sukhadia_circle01.jpg"
+                    class="card-img-top mt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PRATAP MEMORIAL (MOTI MAGRI)</h5>
+                    <p class="card-text">An impressive bronze statue of Maharana Pratap on his favourite horse Chetak, stands atop the Moti Magri overlooking
+                        Fateh Sagar. Local people climb up the hill to pay homage to Rana Pratap and his faithful charger 'Chetak'.</p>
+                    <a href="#" class="text-black text-decoration-none fw-bold">Get Info ></a>
+                </div>
+            </div>
+            <div class="card col-md-6 col-sm-12">
+                <img src="https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/explore/228.jpg" class="card-img-top mt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PRATAP MEMORIAL (MOTI MAGRI)</h5>
+                    <p class="card-text">An impressive bronze statue of Maharana Pratap on his favourite horse Chetak, stands atop the Moti Magri overlooking
+                        Fateh Sagar. Local people climb up the hill to pay homage to Rana Pratap and his faithful charger 'Chetak'.</p>
+                    <a href="#" class="text-black text-decoration-none fw-bold">Get Info ></a>
+                </div>
+            </div>
+            <div class="card col-md-6 col-sm-12">
+                <img src="https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/explore/229.jpg" class="card-img-top mt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PRATAP MEMORIAL (MOTI MAGRI)</h5>
+                    <p class="card-text">An impressive bronze statue of Maharana Pratap on his favourite horse Chetak, stands atop the Moti Magri overlooking
+                        Fateh Sagar. Local people climb up the hill to pay homage to Rana Pratap and his faithful charger 'Chetak'.</p>
+                    <a href="#" class="text-black text-decoration-none fw-bold">Get Info ></a>
+                </div>
+            </div>
+            <div class="card col-md-6 col-sm-12">
+                <img src="https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/explore/sukhadia_circle01.jpg"
+                    class="card-img-top mt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PRATAP MEMORIAL (MOTI MAGRI)</h5>
+                    <p class="card-text">An impressive bronze statue of Maharana Pratap on his favourite horse Chetak, stands atop the Moti Magri overlooking
+                        Fateh Sagar. Local people climb up the hill to pay homage to Rana Pratap and his faithful charger 'Chetak'.</p>
+                    <a href="#" class="text-black text-decoration-none fw-bold">Get Info ></a>
+                </div>
+            </div>
+            <div class="card col-md-6 col-sm-12">
+                <img src="https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/explore/229.jpg" class="card-img-top mt-3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">PRATAP MEMORIAL (MOTI MAGRI)</h5>
+                    <p class="card-text">An impressive bronze statue of Maharana Pratap on his favourite horse Chetak, stands atop the Moti Magri overlooking
+                        Fateh Sagar. Local people climb up the hill to pay homage to Rana Pratap and his faithful charger 'Chetak'.</p>
+                    <a href="#" class="text-black text-decoration-none fw-bold">Get Info ></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./assets/js/index.js"></script>
+    <!-- External Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
