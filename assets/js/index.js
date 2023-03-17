@@ -1,7 +1,15 @@
 const menuLinks = document.querySelectorAll('.nav-link');
 
-//set active link on page load given in URL
 window.onload = () => {
+    updateLinks()
+}
+
+window.addEventListener('hashchange', function (e) {
+    updateLinks()
+});
+
+//set active menu-link based on URL
+const updateLinks = () => {
     let currentLocation = location.href.split('#');
     let searchId;
     if (typeof currentLocation != "string") {
@@ -9,6 +17,8 @@ window.onload = () => {
             searchId = "home-link";
         else
             searchId = currentLocation.at(-1) + "-link";
+
+        for (const link of document.querySelectorAll(".nav-link.active")) { link.classList.remove("active"); }
         document.getElementById(searchId).classList.add('active');
     }
 }
