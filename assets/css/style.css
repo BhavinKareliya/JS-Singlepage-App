@@ -1,0 +1,30 @@
+html {
+    min-height: 100vh;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#about-us {
+    padding: 160px 0px;
+    color: #fff;
+    text-align: justify;
+    background-image: url(https://www.tourism.rajasthan.gov.in/content/dam/rajasthan-tourism/english/city/explore/237.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.card {
+    border: 0px !important;
+}
+
+.card .card-body {
+    background-color: #f5f5f5;
+}
+
+.nav .nav-link {
+    color: black !important;
+    font-size: 4rem !important;
+}
